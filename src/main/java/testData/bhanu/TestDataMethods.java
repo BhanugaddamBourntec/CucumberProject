@@ -3,6 +3,7 @@ package testData.bhanu;
 import org.testng.annotations.Test;
 import testData.TestDataGenerator;
 
+
 public class TestDataMethods {
 
     @Test
@@ -48,8 +49,9 @@ public class TestDataMethods {
 
         System.out.println("random number below '5' "+ "-" + TestDataGenerator.getRandomNumber(5));
 
-
     }
 
     }
+
+
 
