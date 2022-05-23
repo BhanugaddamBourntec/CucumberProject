@@ -1,4 +1,4 @@
-
+@RUN
 @REGRESSION
 
 Feature: This feature books the flight tickets

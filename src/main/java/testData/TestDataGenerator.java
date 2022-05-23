@@ -3,6 +3,7 @@ package testData;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Test;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -157,10 +158,9 @@ public class TestDataGenerator {
         return getRandomAlphabeticString(10)+"-"+getRandomAlphabeticString(10)+"-"+getRandomAlphabeticString(7);
     }
 
-
-//    @Test
-//    public void terst123(){
-//        getcurrentDate();
+    @Test
+    public void terst123(){
+        getcurrentDate();
 //        System.out.println(getRandomAlphabeticString(10));
 //        System.out.println(getRandomAlphaNumericString(10));
 //        System.out.println(RandomStringUtils.random(10));
@@ -168,20 +168,8 @@ public class TestDataGenerator {
 //        System.out.println(generateRandomEmail(10));
 //        System.out.println(getPastDate(2));
 //        System.out.println(getFutureDate(2));
-//
-//        System.out.println(getUniqueNumber());
-//    }
 
-
-    public static String getCurrentTime(){
-
-        DateFormat dateFormat = new SimpleDateFormat("hh.mm aa");
-        String dateString = dateFormat.format(new Date()).toString();
-
-        System.out.println("Current time in AM/PM: "+dateString);
-
-        return dateString;
+        System.out.println(getUniqueNumber());
     }
-
 
 }

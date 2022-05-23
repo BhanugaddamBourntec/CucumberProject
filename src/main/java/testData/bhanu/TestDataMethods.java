@@ -41,7 +41,7 @@ public class TestDataMethods {
 
         System.out.println("UID" +TestDataGenerator.getRandomUUID());
 
-       // System.out.println(TestDataGenerator.getFormattedDate("Feb172009"));
+        // System.out.println(TestDataGenerator.getFormattedDate());
 
         System.out.println(TestDataGenerator.getUniqueDate());
 
