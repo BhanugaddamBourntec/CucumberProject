@@ -24,8 +24,10 @@ import java.util.Map;
 public class TestBase {
     public static Map<String, String> world = new HashMap<>();
     public static Map<String, List<String>> worldList = new HashMap<>();
+
     // This is used to initialise logs to print in the console
     public Logger logger = LogManager.getLogger(TestBase.class);
+
     public static WebDriver driver;
     public static int expWait;
     public static String browser;

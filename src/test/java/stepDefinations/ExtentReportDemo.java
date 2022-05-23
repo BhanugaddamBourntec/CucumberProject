@@ -11,11 +11,13 @@ public class ExtentReportDemo {
 
     @Test
     public void testExtent(){
+
         ExtentReports reports = new ExtentReports();
         ExtentHtmlReporter htmlReporter;
         ExtentTest test;
 
         String reportName = System.getProperty("user.dir") + "/Reports/ExtentReportBourntec.html";
+
         htmlReporter = new ExtentHtmlReporter(new File(reportName));
         htmlReporter.loadXMLConfig(String.valueOf(new File(System.getProperty("user.dir") + "/src/test/resources/extent-config.xml")));
 
@@ -34,6 +36,7 @@ public class ExtentReportDemo {
         test.info("This is info message");
         test.pass("Test Case is passed");
         test.fail("Test case is failed");
+
 
         reports.flush();
     }
