@@ -15,14 +15,15 @@ import java.util.Calendar;
 
 
 @CucumberOptions
-        (features = "src/test/resources",
+        (features = "src/test/resources/bhanu/United_Airlines.feature",
                 plugin = {"pretty", "html:target/cucumber-html-report.html"
                         ,"html:target/cucumber_reports/cucumber_pretty.html"
                         ,"json:target/cucumber_reports/cucumberTestReport.json"
 //                        ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter"
                 },
                 glue = {"stepDefinations"},
-                tags = "@RUN")
+                tags = "@package"
+        )
 
 public class TestRunner extends AbstractTestNGCucumberTests {
     String tags = "";
@@ -58,7 +59,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
     private void setUpExtentReports() {
         TestBase.reports = new ExtentReports();
-        TestBase.reportName = System.getProperty("user.dir") + "/Reports/BourntecExtentReport.html";
+        TestBase.reportName = System.getProperty("user.dir") + "/Reports/AirlinesExtentReport.html";
         TestBase.htmlReporter = new ExtentHtmlReporter(new File(TestBase.reportName));
         TestBase.htmlReporter.loadXMLConfig(String.valueOf(new File(System.getProperty("user.dir") + "/src/test/resources/extent-config.xml")));
         TestBase.reports.setSystemInfo("Browser",   TestBase.browser);
